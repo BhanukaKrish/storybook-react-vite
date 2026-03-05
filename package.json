@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": ["packages/*"],
   "scripts": {
+    "build:azendcn": "npm run build -w azendcn",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
